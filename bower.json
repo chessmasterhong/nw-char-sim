@@ -1,0 +1,8 @@
+{
+  "name": "nw-char-sim",
+  "private": true,
+  "dependencies": {
+    "angular": "~1.3.2",
+    "angular-ui-router": "~0.2.11"
+  }
+}
