@@ -4,6 +4,17 @@ define([
     'use strict';
 
     controllers.controller('characterController', function($scope) {
+
+        // ====================
+        // Character Base
+        $scope.charLevel = '';
+
+        $scope.charClass = '';
+
+        $scope.charParagon = '';
+
+        $scope.charRace = '';
+
         // ====================
         // Ability Scores
         $scope.charAbility = {
