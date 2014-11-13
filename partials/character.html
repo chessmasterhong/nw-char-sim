@@ -11,8 +11,9 @@
     <tr>
         <th>Offensive/Healing</th>
     </tr>
-    <tr>
-        <td></td>
+    <tr data-ng-repeat="statOffensive in charStatOffensive">
+        <td>{{ statOffensive.name }}</td>
+        <td>{{ statOffensive.value }}</td>
     </tr>
     <tr>
         <th>Defensive</th>

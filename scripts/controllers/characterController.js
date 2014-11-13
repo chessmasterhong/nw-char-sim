@@ -24,5 +24,13 @@ define([
             { name: 'Companion Influence',    value: 0 },
             { name: 'Gold Gain',              value: 0 }
         ];
+
+        $scope.charStatOffensive = [
+            { name: 'Attack/Healing',          value: 0 },
+            { name: 'Critical Chance',         value: 0 },
+            { name: 'Critical Severity',       value: 0 },
+            { name: 'Recharge Speed Increase', value: 0 },
+            { name: 'Action Point Gain',       value: 0 }
+        ];
     });
 });
