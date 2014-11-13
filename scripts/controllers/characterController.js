@@ -4,6 +4,8 @@ define([
     'use strict';
 
     controllers.controller('characterController', function($scope) {
+        $scope.charGearScore = 0;
+
         $scope.charStatRatings = [
             { name: 'Power',                  value: 0 },
             { name: 'Critical Strike',        value: 0 },

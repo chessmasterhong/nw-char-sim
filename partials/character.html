@@ -2,11 +2,21 @@
 
 <table>
     <tr>
+        <td>Gear Score</td>
+        <td>{{ charGearScore }}</td>
+    </tr>
+    <tr>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
         <th>Ratings</th>
     </tr>
     <tr data-ng-repeat="statRating in charStatRatings">
         <td>{{ statRating.name }}</td>
         <td>{{ statRating.value }}</td>
+    </tr>
+    <tr>
+        <td>&nbsp;</td>
     </tr>
     <tr>
         <th>Offensive/Healing</th>
@@ -16,6 +26,9 @@
         <td>{{ statOffensive.value }}</td>
     </tr>
     <tr>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
         <th>Defensive</th>
     </tr>
     <tr data-ng-repeat="statDefensive in charStatDefensive">
@@ -23,11 +36,17 @@
         <td>{{ statDefensive.value }}</td>
     </tr>
     <tr>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
         <th>PVP</th>
     </tr>
     <tr data-ng-repeat="statPVP in charStatPVP">
         <td>{{ statPVP.name }}</td>
         <td>{{ statPVP.value }}</td>
+    </tr>
+    <tr>
+        <td>&nbsp;</td>
     </tr>
     <tr>
         <th>Utility</th>
