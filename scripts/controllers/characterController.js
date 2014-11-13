@@ -4,6 +4,8 @@ define([
     'use strict';
 
     controllers.controller('characterController', function($scope) {
+        // ====================
+        // Ability Scores
         $scope.charAbility = {
             str: 0,
             con: 0,
@@ -11,8 +13,10 @@ define([
             int: 0,
             wis: 0,
             cha: 0
-        }
+        };
 
+        // ====================
+        // Derived Stats
         $scope.charGearScore = 0;
 
         $scope.charStatRatings = [
@@ -65,5 +69,94 @@ define([
             { name: 'Glory Bonus',     value: 0 },
             { name: 'Run Speed Bonus', value: 0 }
         ];
+
+        // ====================
+        // Equipments
+        $scope.charEquipHead = {
+            name: '',
+            enchantment: '',
+            overload: '',
+            reinforcement: ''
+        };
+
+        $scope.charEquipArmor = {
+            name: '',
+            enchantment: '',
+            enhancement: '',
+            reinforcement: ''
+        };
+
+        $scope.charEquipArms = {
+            name: '',
+            enchantment: '',
+            overload: '',
+            reinforcement: ''
+        };
+
+        $scope.charEquipMainHand = {
+            name: '',
+            enchantment1: '',
+            enchantment2: '',
+            enhancement: '',
+            rank: 1
+        };
+
+        $scope.charEquipOffHand = {
+            name: '',
+            enchantment: ''
+        };
+
+        $scope.charEquipFeet = {
+            name: '',
+            enchantment: '',
+            reinforcement: ''
+        };
+
+        $scope.charEquipNeck = {
+            name: '',
+            enchantment: ''
+        };
+
+        $scope.charEquipRingRight = {
+            name: '',
+            enchantment: ''
+        };
+
+        $scope.charEquipRingLeft = {
+            name: '',
+            enchantment: ''
+        };
+
+        $scope.charEquipBelt = {
+            name: '',
+            enchantment1: '',
+            enchantment2: '',
+            rank: 1
+        };
+
+        $scope.charEquipShirt = {
+            name: '',
+            enchantment: ''
+        };
+
+        $scope.charEquipPants = {
+            name: '',
+            enchantment: ''
+        };
+
+        $scope.charEquipArtifactPrimary = {
+            name: '',
+            rank: 1
+        };
+
+        $scope.charEquipArtifactSecondary1 = {
+            name: '',
+            rank: 1
+        };
+
+        $scope.charEquipArtifactSecondary2 = {
+            name: '',
+            rank: 1
+        };
     });
 });
