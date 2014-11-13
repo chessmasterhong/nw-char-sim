@@ -18,8 +18,9 @@
     <tr>
         <th>Defensive</th>
     </tr>
-    <tr>
-        <td></td>
+    <tr data-ng-repeat="statDefensive in charStatDefensive">
+        <td>{{ statDefensive.name }}</td>
+        <td>{{ statDefensive.value }}</td>
     </tr>
     <tr>
         <th>PVP</th>

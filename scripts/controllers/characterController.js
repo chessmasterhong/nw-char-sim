@@ -32,5 +32,14 @@ define([
             { name: 'Recharge Speed Increase', value: 0 },
             { name: 'Action Point Gain',       value: 0 }
         ];
+
+        $scope.charStatDefensive = [
+            { name: 'Protection',                  value: 0 },
+            { name: 'Damage Resistance',           value: 0 },
+            { name: 'Deflection Chance',           value: 0 },
+            { name: 'Deflection Severity',         value: 0 },
+            { name: 'Health Regeneration',         value: 0 },
+            { name: 'Damage Gained as Hit Points', value: 0 }
+        ];
     });
 });
