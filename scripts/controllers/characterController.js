@@ -19,6 +19,10 @@ define([
         // Derived Stats
         $scope.charGearScore = 0;
 
+        $scope.charArmorClass = 0;
+
+        $scope.charHitPoints = 0;
+
         $scope.charStatRatings = [
             { name: 'Power',                  value: 0 },
             { name: 'Critical Strike',        value: 0 },
