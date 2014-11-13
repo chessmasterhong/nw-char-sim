@@ -25,13 +25,15 @@
     <tr>
         <th>PVP</th>
     </tr>
-    <tr>
-        <td></td>
+    <tr data-ng-repeat="statPVP in charStatPVP">
+        <td>{{ statPVP.name }}</td>
+        <td>{{ statPVP.value }}</td>
     </tr>
     <tr>
         <th>Utility</th>
     </tr>
-    <tr>
-        <td></td>
+    <tr data-ng-repeat="statUtility in charStatUtility">
+        <td>{{ statUtility.name }}</td>
+        <td>{{ statUtility.value }}</td>
     </tr>
 </table>

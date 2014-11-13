@@ -41,5 +41,18 @@ define([
             { name: 'Health Regeneration',         value: 0 },
             { name: 'Damage Gained as Hit Points', value: 0 }
         ];
+
+        $scope.charStatPVP = [
+            { name: 'Damage Resistance',          value: 0 },
+            { name: 'Critical Strike Resistance', value: 0 },
+            { name: 'Control Resistance',         value: 0 }
+        ];
+
+        $scope.charStatUtility = [
+            { name: 'XP Bonus',        value: 0 },
+            { name: 'Gold Bonus',      value: 0 },
+            { name: 'Glory Bonus',     value: 0 },
+            { name: 'Run Speed Bonus', value: 0 }
+        ];
     });
 });
