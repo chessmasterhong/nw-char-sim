@@ -1,12 +1,12 @@
 define([
     'angular',
     'uiRouter',
-    //'config/controllers/index'
-    //'config/directives/index'
+    'controllers/index'
 ], function(angular) {
     'use strict';
 
     return angular.module('app', [
+        'app.controllers',
         'ui.router'
     ]);
 });

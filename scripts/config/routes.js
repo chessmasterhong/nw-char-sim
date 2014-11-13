@@ -11,7 +11,8 @@ define([
             })
             .state('character', {
                 url: '/character',
-                templateUrl: 'partials/character.html'
+                templateUrl: 'partials/character.html',
+                controller: 'characterController'
             })
             .state('powers', {
                 url: '/powers',
