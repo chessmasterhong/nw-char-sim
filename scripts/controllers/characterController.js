@@ -4,6 +4,15 @@ define([
     'use strict';
 
     controllers.controller('characterController', function($scope) {
+        $scope.charAbility = {
+            str: 0,
+            con: 0,
+            dex: 0,
+            int: 0,
+            wis: 0,
+            cha: 0
+        }
+
         $scope.charGearScore = 0;
 
         $scope.charStatRatings = [
