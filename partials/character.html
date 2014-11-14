@@ -1,82 +1,111 @@
 <p>Character</p>
 
-<table>
-    <tr>
-        <td>{{ charAbility.str }}</td>
-        <td>STR</td>
+<div class="equips">
+    <div class="left">
+        <div>Head</div>
+        <div>Armor</div>
+        <div>Arms</div>
+        <div>Main Hand</div>
+        <div>Off-Hand</div>
+        <div>Feet</div>
+    </div>
 
-        <td>{{ charAbility.int }}</td>
-        <td>INT</td>
-    </tr>
-    <tr>
-        <td>{{ charAbility.con }}</td>
-        <td>CON</td>
+    <div class="right">
+        <div>Neck</div>
+        <div>Right Ring</div>
+        <div>Left Ring</div>
+        <div>Belt</div>
+        <div>Shirt</div>
+        <div>Pants</div>
+    </div>
 
-        <td>{{ charAbility.wis }}</td>
-        <td>WIS</td>
-    </tr>
-    <tr>
-        <td>{{ charAbility.dex }}</td>
-        <td>DEX</td>
+    <div class="bottom">
+        <div class="left">Primary Artifact</div>
+        <div class="right">Secondary Artifacts</div>
+    </div>
 
-        <td>{{ charAbility.cha }}</td>
-        <td>CHA</td>
-    </tr>
-</table><br>
+    <div class="base">
+        <span>Level</span>
+        <span>Class</span>
+        <span>Paragon</span>
+        <span>Race</span>
+    </div>
+</div>
 
-<table>
-    <tr>
-        <td>Gear Score</td>
-        <td>{{ charGearScore }}</td>
-    </tr>
-    <tr>
-        <td>&nbsp;</td>
-    </tr>
-    <tr>
-        <th>Ratings</th>
-    </tr>
-    <tr data-ng-repeat="statRating in charStatRatings">
-        <td>{{ statRating.name }}</td>
-        <td>{{ statRating.value }}</td>
-    </tr>
-    <tr>
-        <td>&nbsp;</td>
-    </tr>
-    <tr>
-        <th>Offensive/Healing</th>
-    </tr>
-    <tr data-ng-repeat="statOffensive in charStatOffensive">
-        <td>{{ statOffensive.name }}</td>
-        <td>{{ statOffensive.value }}</td>
-    </tr>
-    <tr>
-        <td>&nbsp;</td>
-    </tr>
-    <tr>
-        <th>Defensive</th>
-    </tr>
-    <tr data-ng-repeat="statDefensive in charStatDefensive">
-        <td>{{ statDefensive.name }}</td>
-        <td>{{ statDefensive.value }}</td>
-    </tr>
-    <tr>
-        <td>&nbsp;</td>
-    </tr>
-    <tr>
-        <th>PVP</th>
-    </tr>
-    <tr data-ng-repeat="statPVP in charStatPVP">
-        <td>{{ statPVP.name }}</td>
-        <td>{{ statPVP.value }}</td>
-    </tr>
-    <tr>
-        <td>&nbsp;</td>
-    </tr>
-    <tr>
-        <th>Utility</th>
-    </tr>
-    <tr data-ng-repeat="statUtility in charStatUtility">
-        <td>{{ statUtility.name }}</td>
-        <td>{{ statUtility.value }}</td>
-    </tr>
-</table>
+<div class="stats">
+    <div class="top">
+        <div class="left">AC</div>
+        <div class="right">Hit Points</div>
+    </div>
+
+    <div class="ability">
+        <div class="left">
+            <div>{{ charAbility.str }} STR</div>
+            <div>{{ charAbility.con }} CON</div>
+            <div>{{ charAbility.dex }} DEX</div>
+        </div>
+
+        <div class="right">
+            <div>{{ charAbility.int }} INT</div>
+            <div>{{ charAbility.wis }} WIS</div>
+            <div>{{ charAbility.cha }} CHA</div>
+        </div>
+    </div>
+
+    <table>
+        <tr>
+            <td>Gear Score</td>
+            <td class="value">{{ charGearScore }}</td>
+        </tr>
+        <tr class="separator">
+            <td></td>
+        </tr>
+        <tr>
+            <th>Ratings</th>
+        </tr>
+        <tr data-ng-repeat="statRating in charStatRatings">
+            <td>{{ statRating.name }}</td>
+            <td class="value">{{ statRating.value }}</td>
+        </tr>
+        <tr class="separator">
+            <td></td>
+        </tr>
+        <tr>
+            <th>Offensive/Healing</th>
+        </tr>
+        <tr data-ng-repeat="statOffensive in charStatOffensive">
+            <td>{{ statOffensive.name }}</td>
+            <td class="value">{{ statOffensive.value }}</td>
+        </tr>
+        <tr class="separator">
+            <td></td>
+        </tr>
+        <tr>
+            <th>Defensive</th>
+        </tr>
+        <tr data-ng-repeat="statDefensive in charStatDefensive">
+            <td>{{ statDefensive.name }}</td>
+            <td class="value">{{ statDefensive.value }}</td>
+        </tr>
+        <tr class="separator">
+            <td></td>
+        </tr>
+        <tr>
+            <th>PVP</th>
+        </tr>
+        <tr data-ng-repeat="statPVP in charStatPVP">
+            <td>{{ statPVP.name }}</td>
+            <td class="value">{{ statPVP.value }}</td>
+        </tr>
+        <tr class="separator">
+            <td></td>
+        </tr>
+        <tr>
+            <th>Utility</th>
+        </tr>
+        <tr data-ng-repeat="statUtility in charStatUtility">
+            <td>{{ statUtility.name }}</td>
+            <td class="value">{{ statUtility.value }}</td>
+        </tr>
+    </table>
+</div>
