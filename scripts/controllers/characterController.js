@@ -56,26 +56,26 @@ define([
         ];
 
         $scope.charStatOffensive = [
-            { name: 'Attack/Healing',          value: 0 },
-            { name: 'Critical Chance',         value: 0 },
-            { name: 'Critical Severity',       value: 0 },
-            { name: 'Recharge Speed Increase', value: 0 },
-            { name: 'Action Point Gain',       value: 0 }
+            { name: 'Attack/Healing',          value: 0  },
+            { name: 'Critical Chance',         value: 0  },
+            { name: 'Critical Severity',       value: 75 },
+            { name: 'Recharge Speed Increase', value: 0  },
+            { name: 'Action Point Gain',       value: 0  }
         ];
 
         $scope.charStatDefensive = [
-            { name: 'Protection',                  value: 0 },
-            { name: 'Damage Resistance',           value: 0 },
-            { name: 'Deflection Chance',           value: 0 },
-            { name: 'Deflection Severity',         value: 0 },
-            { name: 'Health Regeneration',         value: 0 },
-            { name: 'Damage Gained as Hit Points', value: 0 }
+            { name: 'Protection',                  value: 0  },
+            { name: 'Damage Resistance',           value: 0  },
+            { name: 'Deflection Chance',           value: 0  },
+            { name: 'Deflection Severity',         value: 50 },
+            { name: 'Health Regeneration',         value: 0  },
+            { name: 'Damage Gained as Hit Points', value: 0  }
         ];
 
         $scope.charStatPVP = [
-            { name: 'Damage Resistance',          value: 0 },
-            { name: 'Critical Strike Resistance', value: 0 },
-            { name: 'Control Resistance',         value: 0 }
+            { name: 'Damage Resistance',          value: 10 },
+            { name: 'Critical Strike Resistance', value: 10 },
+            { name: 'Control Resistance',         value: 10 }
         ];
 
         $scope.charStatUtility = [
