@@ -1,10 +1,51 @@
+body {
+    margin: 20px;
+}
+
+nav {
+    background: #fff;
+    border-bottom: 2px solid #000;
+    overflow: hidden;
+    width: 100%;
+}
+
+nav ul {
+    float: left;
+    left: 50%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    text-align: center;
+}
+
+nav ul li {
+    border: 1px solid #000;
+    border-bottom: 0;
+    display: block;
+    float: left;
+    margin-right: 2px;
+    position: relative;
+    right: 50%;
+}
+
+nav ul li a {
+    background: #ddd;
+    color: #000;
+    display: block;
+    line-height: 1.2em;
+    padding: 4px 20px;
+    text-decoration: none;
+}
+
+
 /* ========================================
     Character Equipments
 ======================================== */
 .equips {
     float: left;
+    margin-left: 2%;
     position: relative;
-    width: 65%;
+    width: 60%;
 }
 
 .equips .left {
@@ -46,6 +87,7 @@
 ======================================== */
 .stats {
     float: right;
+    margin-right: 2%;
     width: 30%;
 }
 
