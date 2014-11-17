@@ -7,13 +7,37 @@ define([
 
         // ====================
         // Character Base
-        $scope.charLevel = '';
+        $scope.charLevel = 1;
 
         $scope.charClass = '';
 
         $scope.charParagon = '';
 
         $scope.charRace = '';
+
+        $scope.charPathOptions = [
+            { className: 'Control Wizard'      , paragonPaths: ['Spellstorm Mage'   , 'Master of Flame'] },
+            { className: 'Devoted Cleric'      , paragonPaths: ['Anointed Champion' , 'Divine Oracle'  ] },
+            { className: 'Great Weapon Fighter', paragonPaths: ['Iron Vanguard'     , 'Swordmaster'    ] },
+            { className: 'Guardian Fighter'    , paragonPaths: ['Iron Vanguard'     , 'Swordmaster'    ] },
+            { className: 'Hunter Ranger'       , paragonPaths: ['Pathfinder'        , 'Stormwarden'    ] },
+            { className: 'Scourge Warlock'     , paragonPaths: ['Hellbringer'       , 'Soulbinder'     ] },
+            { className: 'Trickster Rogue'     , paragonPaths: ['Master Infiltrator', 'Whisperknife'   ] }
+        ];
+
+        $scope.charRaceOptions = [
+            'Drow',
+            'Dwarf',
+            'Half-Elf',
+            'Half-Orc',
+            'Halfling',
+            'Human',
+            'Menzoberranzan Renegade',
+            'Moon Elf',
+            'Sun Elf',
+            'Tiefling',
+            'Wood Elf'
+        ];
 
         // ====================
         // Ability Scores
