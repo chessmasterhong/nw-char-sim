@@ -37,13 +37,17 @@ nav ul li a {
     text-decoration: none;
 }
 
+.ng-scope {
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+}
+
 
 /* ========================================
     Character Equipments
 ======================================== */
 .equips {
     float: left;
-    margin-left: 2%;
     position: relative;
     width: 60%;
 }
@@ -87,7 +91,6 @@ nav ul li a {
 ======================================== */
 .stats {
     float: right;
-    margin-right: 2%;
     width: 30%;
 }
 
