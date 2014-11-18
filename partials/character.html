@@ -26,9 +26,13 @@
 
     <div class="base">
         <span>Level</span>
-        <span>Class</span>
-        <span>Paragon</span>
-        <span>Race</span>
+        <span>
+            <select data-ng-model="charClass" data-ng-options="classes.className for classes in charPathOptions"></select>
+        </span>
+        <span>
+            <select data-ng-model="charParagon" data-ng-options="paragons for paragons in charClass.paragonPaths"></select>
+        </span>
+        <span><select data-ng-model="charRace" data-ng-options="races for races in charRaceOptions"></select></span>
     </div>
 </div>
 
