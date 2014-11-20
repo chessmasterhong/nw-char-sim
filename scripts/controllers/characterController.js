@@ -142,7 +142,9 @@ define([
 
         $scope.charEquipOffHand = {
             name: '',
-            enchantment: ''
+            enchantment1: '',
+            enchantment2: '',
+            rank: 1
         };
 
         $scope.charEquipFeet = {
@@ -153,17 +155,23 @@ define([
 
         $scope.charEquipNeck = {
             name: '',
-            enchantment: ''
+            enchantment1: '',
+            enchantment2: '',
+            rank: 1
         };
 
         $scope.charEquipRingRight = {
             name: '',
-            enchantment: ''
+            enchantment1: '',
+            enchantment2: '',
+            rank: 1
         };
 
         $scope.charEquipRingLeft = {
             name: '',
-            enchantment: ''
+            enchantment1: '',
+            enchantment2: '',
+            rank: 1
         };
 
         $scope.charEquipBelt = {
