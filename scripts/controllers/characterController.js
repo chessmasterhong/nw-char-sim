@@ -15,6 +15,14 @@ define([
 
         $scope.charRace = '';
 
+        $scope.charLevelOptions = function(start, end) {
+            var r = [];
+            for(var i = start; i <= end; i++) {
+                r.push(i);
+            }
+            return r;
+        };
+
         $scope.charPathOptions = [
             { className: 'Control Wizard'      , paragonPaths: ['Spellstorm Mage'   , 'Master of Flame'] },
             { className: 'Devoted Cleric'      , paragonPaths: ['Anointed Champion' , 'Divine Oracle'  ] },

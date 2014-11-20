@@ -25,7 +25,9 @@
     </div>
 
     <div class="base">
-        <span>Level</span>
+        <span>
+            <select data-ng-model="charLevel" data-ng-options="levels for levels in charLevelOptions(1, 60)"></select>
+        </span>
         <span>
             <select data-ng-model="charClass" data-ng-options="classes.className for classes in charPathOptions"></select>
         </span>
