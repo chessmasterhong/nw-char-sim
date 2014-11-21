@@ -7,17 +7,9 @@ define([
 
         // ====================
         // Character Base
-        $scope.charLevel = 1;
-
-        $scope.charClass = '';
-
-        $scope.charParagon = '';
-
-        $scope.charRace = '';
-
-        $scope.charLevelOptions = function(start, end) {
+        $scope.charLevelOptions = function() {
             var r = [];
-            for(var i = start; i <= end; i++) {
+            for(var i = 1; i <= 60; i++) {
                 r.push(i);
             }
             return r;
@@ -46,6 +38,14 @@ define([
             'Tiefling',
             'Wood Elf'
         ];
+
+        $scope.charLevel = 60;
+
+        $scope.charClass = '';
+
+        $scope.charParagon = '';
+
+        $scope.charRace = '';
 
         // ====================
         // Ability Scores

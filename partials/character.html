@@ -26,15 +26,23 @@
 
     <div class="base">
         <span>
-            <select data-ng-model="charLevel" data-ng-options="levels for levels in charLevelOptions(1, 60)"></select>
+            Level <select data-ng-model="charLevel" data-ng-options="levels for levels in charLevelOptions()" required></select>
         </span>
         <span>
-            <select data-ng-model="charClass" data-ng-options="classes.className for classes in charPathOptions"></select>
+            <select data-ng-model="charClass" data-ng-options="classes.className for classes in charPathOptions" required>
+                <option value="">Class</option>
+            </select>
         </span>
         <span>
-            <select data-ng-model="charParagon" data-ng-options="paragons for paragons in charClass.paragonPaths"></select>
+            <select data-ng-model="charParagon" data-ng-options="paragons for paragons in charClass.paragonPaths" required>
+                <option value="">Paragon</option>
+            </select>
         </span>
-        <span><select data-ng-model="charRace" data-ng-options="races for races in charRaceOptions"></select></span>
+        <span>
+            <select data-ng-model="charRace" data-ng-options="races for races in charRaceOptions" required>
+                <option value="">Race</option>
+            </select>
+        </span>
     </div>
 </div>
 
