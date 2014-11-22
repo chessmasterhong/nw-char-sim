@@ -82,9 +82,23 @@ nav ul li a {
 .base span {
     display: inline-block;
     text-align: center;
-    width: 24%;
+    width: 25%;
 }
 
+.base span[id="charLevel"] {
+    width: 20%;
+}
+
+.base span[id="charLevel"] select {
+    min-width: 50px;
+    width: 30%;
+}
+
+.base span[id="charClass"] select,
+.base span[id="charParagon"] select,
+.base span[id="charRace"] select {
+    width: 80%;
+}
 
 /* ========================================
     Character Stats
