@@ -1,4 +1,6 @@
 body {
+    font-family: Tahoma, Verdana, Arial, "sans-serif";
+    font-size: 14px;
     margin: 20px;
 }
 
@@ -35,9 +37,11 @@ nav ul li a {
     line-height: 1.2em;
     padding: 4px 20px;
     text-decoration: none;
+    width: 80px;
 }
 
 .ng-scope {
+    font-size: 13px;
     margin-left: 0.5%;
     margin-right: 0.5%;
 }
@@ -68,6 +72,15 @@ nav ul li a {
     clear: both;
     float: left;
     padding-bottom: 1em;
+}
+
+.equips .left select,
+.equips .right select {
+    width: 120px;
+}
+
+.equips .bottom select {
+    width: 180px;
 }
 
 
@@ -104,8 +117,8 @@ nav ul li a {
     Character Stats
 ======================================== */
 .stats {
-    float: right;
-    width: 30%;
+    float: left;
+    width: 300px;
 }
 
 .stats .top {
