@@ -52,6 +52,7 @@ nav ul li a {
 ======================================== */
 .equips {
     float: left;
+    margin: 0 20px 20px 0;
     position: relative;
     width: 60%;
 }
@@ -59,24 +60,36 @@ nav ul li a {
 .equips .left {
     float: left;
     padding-bottom: 1em;
+    width: 35%;
+}
+
+.equips .middle {
+    float: left;
+    width: 30%;
+}
+
+.equips .middle img {
+    width: 100%;
 }
 
 .equips .right {
-    float: right;
+    float: left;
     position: absolute;
     right: 0;
     text-align: right;
+    width: 35%;
 }
 
 .equips .bottom {
     clear: both;
     float: left;
-    padding-bottom: 1em;
+    padding: 1em 0 2em;
 }
 
 .equips .left select,
 .equips .right select {
-    width: 120px;
+    max-width: 150px;
+    width: 80%;
 }
 
 .equips .bottom select {
