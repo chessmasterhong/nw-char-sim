@@ -1,0 +1,16 @@
+{
+    "HighViziersGloves": {
+        "name": "High Vizier's Gloves",
+        "class": "Control Wizard",
+        "level": 60,
+        "stats": {
+            "power": 279,
+            "recovery": 279,
+            "defense": 116,
+            "deflection": 126,
+            "regeneration": 126
+        },
+        "enchantment": "utility"
+        "overload": ""
+    }
+}
