@@ -1,5 +1,5 @@
-{
-    "HighViziersGloves": {
+[
+    {
         "name": "High Vizier's Gloves",
         "class": "Control Wizard",
         "level": 60,
@@ -10,7 +10,7 @@
             "deflection": 126,
             "regeneration": 126
         },
-        "enchantment": "utility"
+        "enchantment": "utility",
         "overload": ""
     }
-}
+]

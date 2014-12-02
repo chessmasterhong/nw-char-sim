@@ -3,7 +3,7 @@ define([
 ], function(controllers) {
     'use strict';
 
-    controllers.controller('characterController', function($scope) {
+    controllers.controller('characterController', function($scope, equipListArmsFactory) {
 
         // ====================
         // Character Base
@@ -213,5 +213,13 @@ define([
             name: '',
             rank: 1
         };
+
+        /* ------------------------------------------------------------------ */
+
+        $scope.charEquipArmsList = [];
+        equipListArmsFactory.getEquips()
+            .success(function(response) {
+                $scope.charEquipArmsList = response;
+            });
     });
 });
