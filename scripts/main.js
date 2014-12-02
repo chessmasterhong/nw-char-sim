@@ -8,7 +8,8 @@ require.config({
 
         app: './scripts/app',
         config: './scripts/config',
-        controllers: './scripts/controllers'
+        controllers: './scripts/controllers',
+        factories: './scripts/factories'
     },
     shim: {
         angular: { exports: 'angular' },
