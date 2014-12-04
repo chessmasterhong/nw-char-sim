@@ -1,0 +1,17 @@
+[
+    {
+        "name": "High Vizier's Tunic",
+        "class": "Control Wizard",
+        "level": 60,
+        "stats": {
+            "ac": 7,
+            "power": 434,
+            "recovery": 434,
+            "defense": 173,
+            "deflection": 196,
+            "regeneration": 196
+        },
+        "enchantment": "defense",
+        "enhancement": ""
+    }
+]
