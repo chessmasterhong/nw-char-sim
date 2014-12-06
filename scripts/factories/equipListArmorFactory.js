@@ -3,12 +3,12 @@ define([
 ], function(factories) {
     'use strict';
 
-    factories.factory('equipListArmsFactory', function($http) {
+    factories.factory('equipListArmorFactory', function($http) {
         return {
             getEquips: function() {
                 return $http({
                         method: 'GET',
-                        url: 'data/equip-arms.json',
+                        url: 'data/equip-armor.json',
                         json: true
                         //cache: true
                     });
