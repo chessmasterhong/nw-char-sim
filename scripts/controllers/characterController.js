@@ -3,7 +3,7 @@ define([
 ], function(controllers) {
     'use strict';
 
-    controllers.controller('characterController', function($scope, equipListArmsFactory) {
+    controllers.controller('characterController', function($scope, equipListArmorFactory, equipListArmsFactory) {
 
         // ====================
         // Character Base
@@ -215,6 +215,12 @@ define([
         };
 
         /* ------------------------------------------------------------------ */
+
+        $scope.charEquipArmorList = [];
+        equipListArmorFactory.getEquips()
+            .success(function(response) {
+                $scope.charEquipArmorList = response;
+            });
 
         $scope.charEquipArmsList = [];
         equipListArmsFactory.getEquips()
